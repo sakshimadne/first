@@ -1,0 +1,157 @@
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pricing-container {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+.pricing-title {
+    color: #9f5fdd;
+    font-weight: bold;
+}
+
+.pricing-subtitle {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.pricing-description {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pro-plan {
+    border: 1px solid #9f5fdd;
+}
+
+.plan h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.billing-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.billing-options span {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #9f5fdd;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.price {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.price-duration {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+.get-started-btn {
+    background-color: #9f5fdd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.get-started-btn:hover {
+    background-color: #7a45b7;
+}
+
+.basic-plan {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
